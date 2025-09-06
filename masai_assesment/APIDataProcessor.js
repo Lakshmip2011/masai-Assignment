@@ -12,7 +12,7 @@ function processPosts(posts){
     const titlesAndIds=posts.map(post=>{
         return{
             id:post.id,
-            title:posts.title
+            title:post.title
         }
     });
     console.log("Titles & IDs: ", titlesAndIds);
@@ -70,4 +70,5 @@ async function fetchAndProcessPosts(){
     }
 }
    
+
 fetchAndProcessPosts()
